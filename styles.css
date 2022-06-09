@@ -1,0 +1,54 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  background-color: #E54887;
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
+}
+
+nav{
+  padding: 6px 10px;
+  color: white;
+  width: 100%;
+  height: 60px;
+  background-color: #E81A0C;
+}
+
+
+aside{
+  margin: 0;
+  padding: 0px;
+  width: 250px;
+  background-color: #FEB912;
+  position: fixed;
+  height: 100%;
+  overflow: auto;
+  display: block;
+  transition: 0.5s;
+}
+
+#sidebar.hide-sidebar{
+  display: none;
+}
+
+.right-side-square{
+  height: 50px;
+  width: auto;
+  margin: 15px;
+  background-color: #039C55;
+}
+
+@media only screen and (max-width: 600px) {
+  aside { 
+    display: none;
+  }
+}
