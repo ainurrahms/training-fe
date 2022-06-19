@@ -6,7 +6,9 @@ $(window).on('resize', function(){
       $("#icon-clickable").click(function () {
         sidebarAndWrapper.toggleClass("hide-sidebar");
       });
-    }else{
+    }
+    if (win.width() >= 600){
+      console.log("masuk sini maze 610")
       $("#icon-clickable").click(function () {
         sidebarAndWrapper.toggleClass("minimize-sidebar");
       });
