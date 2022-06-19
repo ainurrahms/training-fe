@@ -8,6 +8,8 @@ html {
   box-sizing: inherit;
 }
 
+
+
 body {
   background-color: #E54887;
   margin: 0;
@@ -24,11 +26,12 @@ nav{
 }
 
 
-aside{
+.l-sidebar{
+  background-color: #FEB912;
+  order: 1;
   margin: 0;
   padding: 0px;
   width: 250px;
-  background-color: #FEB912;
   position: fixed;
   height: 100%;
   overflow: auto;
@@ -36,19 +39,110 @@ aside{
   transition: 0.5s;
 }
 
-#sidebar.hide-sidebar{
-  display: none;
+
+
+#sidebar.minimize-sidebar{
+  background-color: #FEB912;
+  order: 1;
+  margin: 0;
+  padding: 0px;
+  width: 80px;
+  position: fixed;
+  height: 100%;
+  overflow: auto;
+  display: block;
+  transition: 0.5s;
 }
 
-.right-side-square{
+.sidebar-content{
   height: 50px;
   width: auto;
   margin: 15px;
   background-color: #039C55;
 }
 
-@media only screen and (max-width: 600px) {
-  aside { 
+.r-sidebar{
+  background-color: #2C81FB;
+  height: 100%;
+  width: 250px;
+  position: fixed;
+  display: flex;
+  right: 0;
+}
+
+.wrapper-content {
+  display: block;
+  width: 100%;
+  padding: 10px;
+}
+
+.r-sidebar-content-1 {
+  height: 50px;
+  margin-bottom: 15px;
+  background-color: #FEDA49;
+}
+
+.r-sidebar-content-2 {
+  height: 50px;
+  margin-bottom: 15px;
+  background-color: #98DD62;
+}
+
+.r-sidebar-content-3 {
+  height: 50px;
+  margin-bottom: 15px;
+  background-color: #FE6900;
+}
+
+
+@media all and (max-width: 600px) {
+  #sidebar.minimize-sidebar {
+    background-color: #FEB912;
+    order: 1;
+    margin: 0;
+    padding: 0px;
+    width: 250px;
+    position: fixed;
+    height: 100%;
+    overflow: auto;
+    display: block;
+    transition: 0.5s;
+  }
+  #sidebar.hide-sidebar {
     display: none;
+  }
+  .wrapper{
+    z-index: 0;
+  }
+  .l-sidebar{
+    z-index: 1;
+  }
+  .r-sidebar {
+    display: flex;
+    background-color: #2C81FB;
+    height: auto;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+  }
+  .wrapper-content{
+    display: block;
+    width: 70%;
+    padding: 10px;
+    margin: auto;
+  }
+  .r-sidebar-content-1{
+    margin-bottom: 5px;
+    height: 50px;
+    background-color: #FE6900;
+  }
+  .r-sidebar-content-2 {
+    margin-bottom: 20px;
+    height: 50px;
+    background-color: #FEDA49;
+  }
+  .r-sidebar-content-3 {
+    height: 50px;
+    background-color: #98DD62;
   }
 }

@@ -8,16 +8,25 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <header>
-    <nav>
-      <img id="icon-clickable" src="./assets/icon.png" alt="">
-    </nav>
-  </header>
-  <aside id="sidebar" class="hide-sidebar">
-    <div class="right-side-square"></div>
-    <div class="right-side-square"></div>
-    <div class="right-side-square"></div>
-  </aside>
+  <div class="wrapper">
+    <header>
+      <nav>
+        <img id="icon-clickable" src="./assets/icon.png" alt="">
+      </nav>
+    </header>
+    <aside id="sidebar" class="l-sidebar minimize-sidebar">
+      <div class="sidebar-content"></div>
+      <div class="sidebar-content"></div>
+      <div class="sidebar-content"></div>
+    </aside>
+    <div class="r-sidebar">
+      <div class="wrapper-content">
+        <div class="r-sidebar-content-1"></div>
+        <div class="r-sidebar-content-2"></div>
+        <div class="r-sidebar-content-3"></div>
+      </div>
+    </div>
+  </div>
 </body>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 <script src="index.js"></script>
