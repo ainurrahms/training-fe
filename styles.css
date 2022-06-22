@@ -17,7 +17,7 @@ body {
   font-weight: normal;
 }
 
-nav{
+nav {
   padding: 6px 10px;
   color: white;
   width: 100%;
@@ -26,7 +26,7 @@ nav{
 }
 
 
-.l-sidebar{
+.l-sidebar {
   background-color: #FEB912;
   order: 1;
   margin: 0;
@@ -41,7 +41,7 @@ nav{
 
 
 
-#sidebar.minimize-sidebar{
+#sidebar.minimize-sidebar {
   background-color: #FEB912;
   order: 1;
   margin: 0;
@@ -54,14 +54,14 @@ nav{
   transition: 0.5s;
 }
 
-.sidebar-content{
+.sidebar-content {
   height: 50px;
   width: auto;
   margin: 15px;
   background-color: #039C55;
 }
 
-.r-sidebar{
+.r-sidebar {
   background-color: #2C81FB;
   height: 100%;
   width: 250px;
@@ -108,15 +108,20 @@ nav{
     display: block;
     transition: 0.5s;
   }
+
   #sidebar.hide-sidebar {
+    transition: 0.5s;
     display: none;
   }
-  .wrapper{
+
+  .wrapper {
     z-index: 0;
   }
-  .l-sidebar{
+
+  .l-sidebar {
     z-index: 1;
   }
+
   .r-sidebar {
     display: flex;
     background-color: #2C81FB;
@@ -125,22 +130,26 @@ nav{
     bottom: 0;
     width: 100%;
   }
-  .wrapper-content{
+
+  .wrapper-content {
     display: block;
     width: 70%;
     padding: 10px;
     margin: auto;
   }
-  .r-sidebar-content-1{
+
+  .r-sidebar-content-1 {
     margin-bottom: 5px;
     height: 50px;
     background-color: #FE6900;
   }
+
   .r-sidebar-content-2 {
     margin-bottom: 20px;
     height: 50px;
     background-color: #FEDA49;
   }
+
   .r-sidebar-content-3 {
     height: 50px;
     background-color: #98DD62;
